@@ -12,7 +12,7 @@ Rules can be provided in a form of list of integers, range object (start, stop, 
 
 # Installation
 ```
-pip install shceduled_task
+pip install scheduled_task
 ```
 
 # Quick start
