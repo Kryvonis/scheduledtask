@@ -1,10 +1,10 @@
 from distutils.core import setup
 
 setup(
-    name='scheduledtask',
-    version='1.0.1',
-    packages=['scheduledtask'],
-    url='https://github.com/Kryvonis/scheduledtask',
+    name='scheduled_task',
+    version='1.0.0',
+    packages=['scheduled_task'],
+    url='https://github.com/Kryvonis/scheduled_task',
     license='MIT',
     author='Artem Kryvonis',
     author_email='me@kryvonis.com',

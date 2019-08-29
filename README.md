@@ -1,8 +1,4 @@
-Copyright 2016 Leonid Umanskiy
-
 Released under MIT license
-
-[![Build Status](https://travis-ci.org/leonidumanskiy/scheduledtask.svg?branch=master)](https://travis-ci.org/leonidumanskiy/scheduledtask)
 
 # Description
 This package provides functionality to work with scheduled tasks (cron-like) in Python.
@@ -16,13 +12,13 @@ Rules can be provided in a form of list of integers, range object (start, stop, 
 
 # Installation
 ```
-pip install scheduledtask
+pip install shceduled_task
 ```
 
 # Quick start
 #### Task that executes twice a day: at 00:00 and 00:30, get next execution time
 ```python
-from scheduledtask import ScheduledTask
+from shceduled_task import ScheduledTask
 
 task = ScheduledTask(minutes=[0, 30], hours=[0], days=None, months=None, years=None)
 print(task.get_next_time())
@@ -30,7 +26,7 @@ print(task.get_next_time())
 
 #### Task that executes every 1st day of Month
 ```python
-from scheduledtask import ScheduledTask
+from shceduled_task import ScheduledTask
 from datetime import datetime
 
 task = ScheduledTask(minutes=[0], hours=[0], days=[1], months=None, years=None)
@@ -41,7 +37,7 @@ print(task.get_previous_time(current_datetime=datetime(2016, 11, 19))
 #### More complex example:
 Get next and previous USA presidential election day by getting the next day after first monday of November every 4rth year
 ```python
-from scheduledtask import ScheduledTask
+from scheduled_task import ScheduledTask
 
 task = ScheduledTask(minutes=[0], hours=[0], days_of_week=[0], days_of_week_num=[0], months=[11], 
                      years=range(1848, 9999, 4))
